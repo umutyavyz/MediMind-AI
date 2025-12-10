@@ -2,36 +2,48 @@
 
 MediMind AI, kullanıcıların semptomlarını analiz ederek olası hastalıkları tahmin eden, detaylı sağlık raporları sunan ve modern web teknolojileriyle donatılmış kapsamlı bir sağlık asistanıdır.
 
-![MediMind AI Banner](https://via.placeholder.com/1000x300?text=MediMind+AI+Project+Preview)
-*(Buraya projenizin ekran görüntüsünü ekleyebilirsiniz)*
+![MediMind AI Banner](RESIM_YOLU_BANNER)
 
-## 🌟 Öne Çıkan Özellikler
+## 🌟 Proje Hakkında
 
-Bu proje sadece bir tahmin aracı değil, tam kapsamlı bir kullanıcı deneyimi sunar:
+MediMind AI, makine öğrenimi algoritmalarını modern bir web arayüzü ile birleştirerek sağlık okuryazarlığını artırmayı hedefler. Kullanıcı dostu arayüzü, **Karanlık Mod** desteği ve **Türkçe** içerik yapısıyla herkesin kolayca kullanabileceği bir araçtır.
 
-*   **🤖 Gelişmiş Yapay Zeka:** Random Forest algoritması ile eğitilmiş, %100'e yakın doğruluk oranına sahip tahmin modeli.
+## 📸 Ekran Görüntüleri
+
+Uygulama, sistem tercihinize duyarlı **Aydınlık** ve **Karanlık** mod seçenekleri sunar.
+
+| Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
+|:-------------------------:|:------------------------:|
+| ![Light Home](./screenshots/light1.png) | ![Dark Home](./screenshots/dark1.png) |
+| **Ana Sayfa & Semptom Seçimi** | **Ana Sayfa & Semptom Seçimi** |
+| ![Light Result](./screenshots/light2.png) | ![Dark Result](./screenshots/dark2.png) |
+| **Sonuç Ekranı & Rapor** | **Sonuç Ekranı & Rapor** |
+
+## ✨ Öne Çıkan Özellikler
+
+*   **🤖 Gelişmiş Yapay Zeka:** Random Forest algoritması ile eğitilmiş, yüksek doğruluk oranına sahip tahmin modeli.
 *   **🇹🇷 Tam Türkçe Destek:** Hastalık isimleri, tanımlar, önlemler ve arayüz tamamen Türkçeleştirilmiştir.
 *   **📄 PDF Raporlama:** Sonuç kartını, grafikleri ve belirtileri içeren profesyonel bir PDF raporu oluşturup indirme imkanı.
 *   **🌙 Karanlık Mod (Dark Mode):** Göz yormayan, sistem tercihlerine duyarlı modern karanlık tema desteği.
 *   **🕒 Geçmiş Aramalar:** Kullanıcının önceki analizlerini tarayıcı hafızasında (LocalStorage) tutarak hızlı erişim sağlar.
 *   **🏥 En Yakın Hastane:** Konum bazlı entegrasyon ile tek tıkla yakındaki sağlık kuruluşlarını listeler.
-*   **📊 Görsel Veri Analizi:** Tahmin olasılıklarını pasta grafikleriyle görselleştirir.
-*   **📱 Responsive Tasarım:** Mobil ve masaüstü cihazlarla tam uyumlu modern arayüz.
+*   **📊 Görsel Veri Analizi:** Tahmin olasılıklarını interaktif pasta grafikleriyle görselleştirir.
+*   **📱 Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu modern arayüz.
 
 ## 🛠️ Kullanılan Teknolojiler
 
 ### Backend (Python & FastAPI)
-*   **FastAPI:** Yüksek performanslı API servisi.
+*   **FastAPI:** Yüksek performanslı, asenkron API servisi.
 *   **Scikit-learn:** Makine öğrenimi modeli (Random Forest Classifier).
 *   **Pandas & NumPy:** Veri işleme ve manipülasyon.
-*   **Googletrans:** Dinamik veri çevirisi.
+*   **Googletrans:** Veri setlerinin dinamik çevirisi.
 
 ### Frontend (React & Tailwind)
-*   **React.js:** Bileşen tabanlı kullanıcı arayüzü.
-*   **Tailwind CSS:** Modern ve esnek stil yönetimi.
-*   **Recharts:** Veri görselleştirme ve grafikler.
-*   **JSPDF & HTML2Canvas:** PDF oluşturma motoru.
-*   **React Select:** Gelişmiş çoklu seçim menüsü.
+*   **React.js:** Bileşen tabanlı modern kullanıcı arayüzü.
+*   **Tailwind CSS:** Responsive ve özelleştirilebilir stil yönetimi.
+*   **Recharts:** Veri görselleştirme kütüphanesi.
+*   **JSPDF & HTML2Canvas:** İstemci tarafında PDF oluşturma.
+*   **React Select:** Gelişmiş, aranabilir çoklu seçim bileşeni.
 
 ## 📂 Proje Yapısı
 
@@ -39,22 +51,24 @@ Bu proje sadece bir tahmin aracı değil, tam kapsamlı bir kullanıcı deneyimi
 MediMind-AI/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py            # API Endpoints
+│   │   ├── main.py            # API Endpoints ve Uygulama
 │   │   └── ...
-│   ├── data/                  # Veri setleri ve çeviri dosyaları
+│   ├── data/                  # Veri setleri (CSV/JSON)
 │   ├── models/                # Eğitilmiş .joblib modelleri
 │   ├── train_model.py         # Model eğitim scripti
 │   └── translate_assets.py    # Çeviri scripti
 │
-└── frontend/
-    ├── src/
-    │   ├── components/        # ResultCard, SymptomForm vb.
-    │   ├── App.js             # Ana uygulama mantığı
-    │   └── ...
-    └── public/
+├── frontend/
+│   ├── src/
+│   │   ├── components/        # ResultCard, SymptomForm vb.
+│   │   ├── App.js             # Ana uygulama mantığı
+│   │   └── ...
+│   └── public/
+│
+└── screenshots/               # Proje görselleri
 ```
 
-## 🚀 Kurulum (Installation)
+## 🚀 Kurulum ve Çalıştırma
 
 Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin.
 
@@ -76,12 +90,18 @@ Gerekli Python kütüphanelerini yükleyin:
 pip3 install -r requirements.txt
 ```
 
-Modeli eğitin ve Türkçe varlıkları oluşturun:
+Modeli eğitin ve gerekli dosyaları oluşturun:
 
 ```bash
 python3 train_model.py
 python3 translate_assets.py
 ```
+
+Sunucuyu başlatın:
+```bash
+uvicorn app.main:app --reload
+```
+*Backend `http://localhost:8000` adresinde çalışacaktır.*
 
 ### 2. Frontend Kurulumu
 
@@ -97,19 +117,7 @@ Gerekli npm paketlerini yükleyin:
 npm install
 ```
 
-## ▶️ Çalıştırma (How to Run)
-
-Uygulamayı çalıştırmak için hem Backend hem de Frontend sunucularını başlatmanız gerekir.
-
-**Adım 1: Backend'i Başlatın**
-`backend` klasöründe:
-```bash
-uvicorn app.main:app --reload
-```
-*Backend `http://localhost:8000` adresinde çalışacaktır.*
-
-**Adım 2: Frontend'i Başlatın**
-`frontend` klasöründe:
+Uygulamayı başlatın:
 ```bash
 npm start
 ```
