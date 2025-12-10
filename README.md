@@ -2,7 +2,7 @@
 
 MediMind AI, kullanıcıların semptomlarını analiz ederek olası hastalıkları tahmin eden, detaylı sağlık raporları sunan ve modern web teknolojileriyle donatılmış kapsamlı bir sağlık asistanıdır.
 
-![MediMind AI Banner](RESIM_YOLU_BANNER)
+![MediMind AI Banner](./screenshots/banner.png)
 
 ## 🌟 Proje Hakkında
 
@@ -14,9 +14,9 @@ Uygulama, sistem tercihinize duyarlı **Aydınlık** ve **Karanlık** mod seçen
 
 | Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
 |:-------------------------:|:------------------------:|
-| ![Light Home](./screenshots/light1.png) | ![Dark Home](./screenshots/dark1.png) |
+| ![Light Home](./screenshots/light1.png) | ![Dark Home](./screenshots/dark2.png) |
 | **Ana Sayfa & Semptom Seçimi** | **Ana Sayfa & Semptom Seçimi** |
-| ![Light Result](./screenshots/light2.png) | ![Dark Result](./screenshots/dark2.png) |
+| ![Light Result](./screenshots/light2.png) | ![Dark Result](./screenshots/dark1.png) |
 | **Sonuç Ekranı & Rapor** | **Sonuç Ekranı & Rapor** |
 
 ## ✨ Öne Çıkan Özellikler
