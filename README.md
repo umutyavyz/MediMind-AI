@@ -1,33 +1,42 @@
-# MediMind AI - Yapay Zeka Destekli Sağlık Asistanı 🧠
+# MediMind AI - Yapay Zeka Destekli Sağlık Asistanı ❤️
 
 MediMind AI, kullanıcıların semptomlarını analiz ederek olası hastalıkları tahmin eden, detaylı sağlık raporları sunan ve modern web teknolojileriyle donatılmış kapsamlı bir sağlık asistanıdır.
 
-![MediMind AI Banner](./screenshots/banner.png)
+![MediMind AI Banner](https://via.placeholder.com/1200x400/ef4444/ffffff?text=MediMind+AI+Health+Assistant)
 
 ## 🌟 Proje Hakkında
 
-MediMind AI, makine öğrenimi algoritmalarını modern bir web arayüzü ile birleştirerek sağlık okuryazarlığını artırmayı hedefler. Kullanıcı dostu arayüzü, **Karanlık Mod** desteği ve **Türkçe** içerik yapısıyla herkesin kolayca kullanabileceği bir araçtır.
+MediMind AI, makine öğrenimi algoritmalarını modern bir web arayüzü ile birleştirerek sağlık okuryazarlığını artırmayı hedefler. Kullanıcı dostu arayüzü, **İnteraktif Vücut Haritası**, **Karanlık Mod** desteği ve **Türkçe** içerik yapısıyla herkesin kolayca kullanabileceği bir araçtır.
 
 ## 📸 Ekran Görüntüleri
 
 Uygulama, sistem tercihinize duyarlı **Aydınlık** ve **Karanlık** mod seçenekleri sunar.
 
+### 🌓 Ana Sayfa ve Semptom Analizi
+Kullanıcılar semptomlarını arama çubuğundan veya interaktif vücut haritası üzerinden seçebilirler.
+
 | Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
 |:-------------------------:|:------------------------:|
-| ![Light Home](./screenshots/light1.png) | ![Dark Home](./screenshots/dark2.png) |
-| **Ana Sayfa & Semptom Seçimi** | **Ana Sayfa & Semptom Seçimi** |
-| ![Light Result](./screenshots/light2.png) | ![Dark Result](./screenshots/dark1.png) |
-| **Sonuç Ekranı & Rapor** | **Sonuç Ekranı & Rapor** |
+| <img src="./screenshots/light_home.png" width="100%" alt="Light Home"> | <img src="./screenshots/dark_home.png" width="100%" alt="Dark Home"> |
+
+### 📋 Teşhis Sonuçları ve Raporlama
+Yapay zeka analizi sonrası detaylı hastalık tanımı, olasılık grafiği ve önerilen tedaviler sunulur.
+
+| Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
+|:-------------------------:|:------------------------:|
+| <img src="./screenshots/light_result.png" width="100%" alt="Light Result"> | <img src="./screenshots/dark_result.png" width="100%" alt="Dark Result"> |
+
+> *Not: Ekran görüntülerini `screenshots` klasörüne `light_home.png`, `dark_home.png`, `light_result.png` ve `dark_result.png` isimleriyle ekleyiniz.*
 
 ## ✨ Öne Çıkan Özellikler
 
 *   **🤖 Gelişmiş Yapay Zeka:** Random Forest algoritması ile eğitilmiş, yüksek doğruluk oranına sahip tahmin modeli.
-*   **🇹🇷 Tam Türkçe Destek:** Hastalık isimleri, tanımlar, önlemler ve arayüz tamamen Türkçeleştirilmiştir.
-*   **📄 PDF Raporlama:** Sonuç kartını, grafikleri ve belirtileri içeren profesyonel bir PDF raporu oluşturup indirme imkanı.
+*   **🧍 İnteraktif Vücut Haritası:** Semptomları vücut bölgelerine göre (Baş, Göğüs, Karın, Uzuvlar vb.) filtreleyerek kolay seçim imkanı.
+*   **📄 Profesyonel A4 Rapor:** Sonuçları, grafikleri ve yasal uyarıları içeren, çıktı almaya uygun A4 formatında PDF raporu oluşturma.
+*   **🔄 Akıllı Geçmiş:** Geçmiş aramalarınızı kaydeder ve tıkladığınızda o analizdeki semptomları otomatik olarak forma geri yükler.
 *   **🌙 Karanlık Mod (Dark Mode):** Göz yormayan, sistem tercihlerine duyarlı modern karanlık tema desteği.
-*   **🕒 Geçmiş Aramalar:** Kullanıcının önceki analizlerini tarayıcı hafızasında (LocalStorage) tutarak hızlı erişim sağlar.
 *   **🏥 En Yakın Hastane:** Konum bazlı entegrasyon ile tek tıkla yakındaki sağlık kuruluşlarını listeler.
-*   **📊 Görsel Veri Analizi:** Tahmin olasılıklarını interaktif pasta grafikleriyle görselleştirir.
+*   **🇹🇷 Tam Türkçe Destek:** Hastalık isimleri, tanımlar, önlemler ve arayüz tamamen Türkçeleştirilmiştir.
 *   **📱 Responsive Tasarım:** Mobil, tablet ve masaüstü cihazlarla tam uyumlu modern arayüz.
 
 ## 🛠️ Kullanılan Teknolojiler
@@ -36,13 +45,13 @@ Uygulama, sistem tercihinize duyarlı **Aydınlık** ve **Karanlık** mod seçen
 *   **FastAPI:** Yüksek performanslı, asenkron API servisi.
 *   **Scikit-learn:** Makine öğrenimi modeli (Random Forest Classifier).
 *   **Pandas & NumPy:** Veri işleme ve manipülasyon.
-*   **Googletrans:** Veri setlerinin dinamik çevirisi.
+*   **Joblib:** Model serileştirme.
 
 ### Frontend (React & Tailwind)
 *   **React.js:** Bileşen tabanlı modern kullanıcı arayüzü.
 *   **Tailwind CSS:** Responsive ve özelleştirilebilir stil yönetimi.
-*   **Recharts:** Veri görselleştirme kütüphanesi.
-*   **JSPDF & HTML2Canvas:** İstemci tarafında PDF oluşturma.
+*   **Recharts:** Veri görselleştirme (Pasta Grafiği).
+*   **JSPDF & HTML2Canvas:** İstemci tarafında yüksek kaliteli PDF oluşturma.
 *   **React Select:** Gelişmiş, aranabilir çoklu seçim bileşeni.
 
 ## 📂 Proje Yapısı
@@ -60,10 +69,12 @@ MediMind-AI/
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── components/        # ResultCard, SymptomForm vb.
+│   │   ├── components/        # ResultCard, SymptomForm, BodyMap vb.
+│   │   ├── utils/             # Yardımcı fonksiyonlar ve mappingler
 │   │   ├── App.js             # Ana uygulama mantığı
 │   │   └── ...
 │   └── public/
+│       └── logo.svg           # Uygulama logosu
 │
 └── screenshots/               # Proje görselleri
 ```
@@ -98,10 +109,11 @@ python3 translate_assets.py
 ```
 
 Sunucuyu başlatın:
+
 ```bash
 uvicorn app.main:app --reload
 ```
-*Backend `http://localhost:8000` adresinde çalışacaktır.*
+Backend `http://localhost:8000` adresinde çalışacaktır.
 
 ### 2. Frontend Kurulumu
 
@@ -111,25 +123,24 @@ Yeni bir terminal açın ve `frontend` klasörüne gidin:
 cd frontend
 ```
 
-Gerekli npm paketlerini yükleyin:
+Gerekli paketleri yükleyin:
 
 ```bash
 npm install
 ```
 
 Uygulamayı başlatın:
+
 ```bash
 npm start
 ```
-*Tarayıcınız otomatik olarak `http://localhost:3000` adresini açacaktır.*
+Uygulama `http://localhost:3000` adresinde açılacaktır.
 
-## ⚠️ Yasal Uyarı (Disclaimer)
+## ⚠️ Yasal Uyarı
 
-Bu proje eğitim ve bilgilendirme amaçlı geliştirilmiş bir yapay zeka uygulamasıdır. **Kesinlikle tıbbi teşhis yerine geçmez.**
-
-*   Burada sunulan sonuçlar sadece istatistiksel tahminlerdir.
-*   Sağlık sorunlarınız için lütfen uzman bir doktora başvurunuz.
-*   Acil durumlarda derhal 112'yi arayınız.
+Bu proje **sadece eğitim ve bilgilendirme amaçlıdır**. Sunulan sonuçlar kesin tıbbi teşhis niteliği taşımaz. Sağlık sorunlarınız için lütfen uzman bir hekime başvurunuz.
 
 ---
-© 2025 MediMind AI. Tüm hakları saklıdır.
+
+**Geliştirici:** Umut Yavuz
+**Lisans:** MIT
