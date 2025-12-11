@@ -45,6 +45,8 @@ const ResultCard = ({ result, darkMode, symptomsList }) => {
         useCORS: true,
         logging: false,
         backgroundColor: '#ffffff', // Arka planı beyaz yap
+        windowWidth: 1280, // Masaüstü genişliğini simüle et (Mobil cihazlarda da masaüstü görünümü için)
+        windowHeight: 720,
         onclone: (clonedDoc) => {
             // 1. Klonlanan dökümanda 'dark' modunu kaldır (Her zaman aydınlık mod)
             clonedDoc.documentElement.classList.remove('dark');
