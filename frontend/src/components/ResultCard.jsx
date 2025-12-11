@@ -330,9 +330,8 @@ const ResultCard = ({ result, darkMode, symptomsList }) => {
                                 />
                                 <Legend 
                                     verticalAlign="bottom" 
-                                    wrapperStyle={{ paddingTop: '20px', fontSize: '13px', width: '100%', color: darkMode ? '#94a3b8' : '#475569' }}
+                                    wrapperStyle={{ paddingTop: '10px', fontSize: '11px', width: '100%', color: darkMode ? '#94a3b8' : '#475569' }}
                                     iconType="circle"
-                                    formatter={(value) => <span className="ml-1 mr-2  font-medium">{value}</span>}
                                 />
                             </PieChart>
                         </ResponsiveContainer>
