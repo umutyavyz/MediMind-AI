@@ -26,8 +26,6 @@ Yapay zeka analizi sonrası detaylı hastalık tanımı, olasılık grafiği ve 
 |:-------------------------:|:------------------------:|
 | <img src="./screenshots/light2.png" width="100%" alt="Light Result"> | <img src="./screenshots/dark2.png" width="100%" alt="Dark Result"> |
 
-> *Not: Ekran görüntülerini `screenshots` klasörüne `light_home.png`, `dark_home.png`, `light_result.png` ve `dark_result.png` isimleriyle ekleyiniz.*
-
 ## ✨ Öne Çıkan Özellikler
 
 *   **🤖 Gelişmiş Yapay Zeka:** Random Forest algoritması ile eğitilmiş, yüksek doğruluk oranına sahip tahmin modeli.
