@@ -2,7 +2,7 @@
 
 MediMind AI, kullanıcıların semptomlarını analiz ederek olası hastalıkları tahmin eden, detaylı sağlık raporları sunan ve modern web teknolojileriyle donatılmış kapsamlı bir sağlık asistanıdır.
 
-![MediMind AI Banner](https://via.placeholder.com/1200x400/ef4444/ffffff?text=MediMind+AI+Health+Assistant)
+![MediMind AI Banner](./screenshots/banner.png)
 
 ## 🌟 Proje Hakkında
 
@@ -17,14 +17,14 @@ Kullanıcılar semptomlarını arama çubuğundan veya interaktif vücut haritas
 
 | Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
 |:-------------------------:|:------------------------:|
-| <img src="./screenshots/light_home.png" width="100%" alt="Light Home"> | <img src="./screenshots/dark_home.png" width="100%" alt="Dark Home"> |
+| <img src="./screenshots/light1.png" width="100%" alt="Light Home"> | <img src="./screenshots/dark1.png" width="100%" alt="Dark Home"> |
 
 ### 📋 Teşhis Sonuçları ve Raporlama
 Yapay zeka analizi sonrası detaylı hastalık tanımı, olasılık grafiği ve önerilen tedaviler sunulur.
 
 | Aydınlık Mod (Light Mode) | Karanlık Mod (Dark Mode) |
 |:-------------------------:|:------------------------:|
-| <img src="./screenshots/light_result.png" width="100%" alt="Light Result"> | <img src="./screenshots/dark_result.png" width="100%" alt="Dark Result"> |
+| <img src="./screenshots/light2.png" width="100%" alt="Light Result"> | <img src="./screenshots/dark2.png" width="100%" alt="Dark Result"> |
 
 > *Not: Ekran görüntülerini `screenshots` klasörüne `light_home.png`, `dark_home.png`, `light_result.png` ve `dark_result.png` isimleriyle ekleyiniz.*
 
