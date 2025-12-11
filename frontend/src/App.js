@@ -27,7 +27,7 @@ function App() {
     // Semptomları getir
     const fetchSymptoms = async () => {
       try {
-        const response = await fetch('http://localhost:8000/symptoms');
+        const response = await fetch('http://127.0.0.1:8000/symptoms');
         if (!response.ok) throw new Error('Sunucuya bağlanılamadı');
         const data = await response.json();
         setSymptomsList(data.symptoms);
@@ -80,7 +80,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('http://127.0.0.1:8000/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

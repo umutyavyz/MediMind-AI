@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || "https://medimind-backend-z247.onrender.com";
+const API_BASE_URL = "http://127.0.0.1:8000";
 
 export const checkHealth = async () => {
   try {
-    const response = await axios.get(`${API_URL}/`);
+    const response = await axios.get(`${API_BASE_URL}/`);
     return response.data;
   } catch (error) {
     console.error("API Error:", error);
@@ -14,7 +14,7 @@ export const checkHealth = async () => {
 
 export const predictDisease = async (symptoms) => {
     try {
-        const response = await axios.post(`${API_URL}/predict`, { symptoms });
+        const response = await axios.post(`${API_BASE_URL}/predict`, { symptoms });
         return response.data;
     } catch (error) {
         console.error("Prediction Error:", error);
