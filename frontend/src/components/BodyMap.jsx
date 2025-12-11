@@ -11,12 +11,12 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
     const isSelected = selectedPart === part;
     const isHovered = hoveredPart === part;
     
-    let fill = darkMode ? '#334155' : '#e2e8f0'; // Default color
+    let fill = darkMode ? '#334155' : '#e2e8f0'; // Varsayılan renk
     
     if (isSelected) {
-      fill = '#3b82f6'; // Blue-500
+      fill = '#3b82f6'; // Mavi-500
     } else if (isHovered) {
-      fill = darkMode ? '#475569' : '#cbd5e1'; // Hover color
+      fill = darkMode ? '#475569' : '#cbd5e1'; // Üzerine gelindiğindeki renk
     }
 
     return {
@@ -39,7 +39,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           </filter>
         </defs>
 
-        {/* Head & Neck */}
+        {/* Baş & Boyun */}
         <path
           d="M150,30 C130,30 115,45 115,75 C115,100 130,115 150,115 C170,115 185,100 185,75 C185,45 170,30 150,30 Z M135,115 L165,115 L165,135 L135,135 Z"
           style={getPathStyle('head')}
@@ -48,7 +48,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('head')}
         />
 
-        {/* Chest */}
+        {/* Göğüs */}
         <path
           d="M115,135 L185,135 L195,220 L105,220 Z"
           style={getPathStyle('chest')}
@@ -57,7 +57,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('chest')}
         />
 
-        {/* Abdomen */}
+        {/* Karın */}
         <path
           d="M105,220 L195,220 L190,290 L110,290 Z"
           style={getPathStyle('abdomen')}
@@ -75,7 +75,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('pelvis')}
         />
 
-        {/* Left Arm (Upper & Lower) */}
+        {/* Sol Kol (Üst & Alt) */}
         <path
           d="M115,135 L80,150 L70,250 L90,250 L100,160 L115,150 Z"
           style={getPathStyle('limbs')}
@@ -84,7 +84,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('limbs')}
         />
 
-        {/* Right Arm (Upper & Lower) */}
+        {/* Sağ Kol (Üst & Alt) */}
         <path
           d="M185,135 L220,150 L230,250 L210,250 L200,160 L185,150 Z"
           style={getPathStyle('limbs')}
@@ -93,7 +93,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('limbs')}
         />
 
-        {/* Left Leg (Thigh & Calf) */}
+        {/* Sol Bacak (Uyluk & Baldır) */}
         <path
           d="M120,330 L148,330 L145,550 L125,550 Z"
           style={getPathStyle('limbs')}
@@ -102,7 +102,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           onClick={() => handlePartClick('limbs')}
         />
 
-        {/* Right Leg (Thigh & Calf) */}
+        {/* Sağ Bacak (Uyluk & Baldır) */}
         <path
           d="M152,330 L180,330 L175,550 L155,550 Z"
           style={getPathStyle('limbs')}
@@ -112,7 +112,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
         />
       </svg>
 
-      {/* Labels/Tooltips */}
+      {/* Etiketler/İpuçları */}
       {hoveredPart && (
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 bg-slate-800 text-white text-xs px-3 py-1.5 rounded-lg shadow-xl whitespace-nowrap z-10 border border-slate-700">
           {hoveredPart === 'head' && 'Baş, Yüz ve Boyun'}
@@ -123,9 +123,9 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
         </div>
       )}
       
-      {/* Floating Buttons Group - Centered Vertically */}
+      {/* Yüzen Düğmeler Grubu - Dikey Ortalanmış */}
       <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex flex-col gap-4">
-        {/* Skin Button */}
+        {/* Cilt Düğmesi */}
         <button
           onClick={() => handlePartClick('skin')}
           className={`p-2.5 rounded-xl shadow-lg transition-all duration-300 border ${
@@ -140,7 +140,7 @@ const BodyMap = ({ onPartSelect, selectedPart, darkMode }) => {
           </svg>
         </button>
 
-        {/* General Button */}
+        {/* Genel Düğmesi */}
         <button
           onClick={() => handlePartClick('general')}
           className={`p-2.5 rounded-xl shadow-lg transition-all duration-300 border ${
