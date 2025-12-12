@@ -134,6 +134,10 @@ npm start
 ```
 Uygulama `http://localhost:3000` adresinde açılacaktır.
 
+## 📊 Veri Seti
+
+Bu projede kullanılan veri seti için teşekkürler: [Disease Symptom Prediction](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset)
+
 ## ⚠️ Yasal Uyarı
 
 Bu proje **sadece eğitim ve bilgilendirme amaçlıdır**. Sunulan sonuçlar kesin tıbbi teşhis niteliği taşımaz. Sağlık sorunlarınız için lütfen uzman bir hekime başvurunuz.
