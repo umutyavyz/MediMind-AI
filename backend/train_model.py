@@ -42,11 +42,8 @@ def train_model():
     X = pd.DataFrame(0, index=df.index, columns=unique_symptoms)
     
     # Matrisi doldur
-    # Bu çok büyük veri setleri için yavaş olabilir, ancak bu boyut için uygundur
     for col in symptom_cols:
         # Her semptom sütunu için, X'teki karşılık gelen semptom sütununu 1 yap
-        # get_dummies mantığını kullanıyoruz ancak satır bazında veya eşleme yoluyla uyguluyoruz
-        # Daha hızlı bir yol:
         for idx, row in df.iterrows():
             symptoms = row[symptom_cols].values
             # NaN ve None değerlerini filtrele
